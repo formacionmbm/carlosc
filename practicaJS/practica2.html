@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- Página que recoge un texto en u cuadro de texto y lo conviente a mayusculas mientaras que
+el usuario va escribiendo -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="texto">Texto</label>
+        <!-- imput id="texto"onkeyup="toUpperCase()"-->
+        <input id="texto" onkeyup="this.value=this.value.toUpperCase()"/>
+        <!--<input id="texto" onkeyup="toUpperCasePropioElemento(this)"/>-->
+        <!--<button type="button" onClick="toUpperCse()">Poner mayusculas</button> -->
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
